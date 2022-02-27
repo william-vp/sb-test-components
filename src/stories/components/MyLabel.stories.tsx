@@ -20,6 +20,11 @@ export default {
                 type: "color"
             }
         },
+        backgroundColor: {
+            control: {
+                type: "color"
+            }
+        }
     }
 } as ComponentMeta<typeof MyLabel>;
 
@@ -55,6 +60,12 @@ Terciary.args = {
 
 export const CustomFontColor = Template.bind({});
 CustomFontColor.args = {
+    label: "No Label",
+    size: 'normal'
+};
+
+export const CustomBackgroundColor = Template.bind({});
+CustomBackgroundColor.args = {
     label: "No Label",
     size: 'normal'
 };
